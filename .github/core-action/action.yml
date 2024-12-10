@@ -14,4 +14,4 @@ runs:
       run: echo "Step 2"
     - name: Step 3
       shell: bash
-      run: test-script
+      run: bash test-script
