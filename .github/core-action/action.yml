@@ -4,6 +4,8 @@ description: 'Core action'
 runs:
   using: composite
   steps:
+    - name: Checkout
+      uses: actions/checkout@v4
     - name: Step 1
       shell: bash
       run: echo "Step 1"
@@ -12,4 +14,4 @@ runs:
       run: echo "Step 2"
     - name: Step 3
       shell: bash
-      run: echo "Step 3"
+      run: test-script
