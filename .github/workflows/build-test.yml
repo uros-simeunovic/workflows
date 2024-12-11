@@ -13,7 +13,7 @@ jobs:
       
       - name: Show files
         shell: bash
-        run: ls -las
+        run: ls -la
 
       - name: Run composite action
         uses: uros-simeunovic/workflows/.github/core-action@main
