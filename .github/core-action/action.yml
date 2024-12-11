@@ -14,4 +14,4 @@ runs:
       run: echo "Step 2"
     - name: Step 3
       shell: bash
-      run: bash ./repo-workflows/scripts/test-script
+      run: bash repo-workflows/scripts/test-script
