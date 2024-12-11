@@ -1,17 +1,9 @@
-name: Core action
-description: 'Core action'
+name: "My Composite Action"
+description: "A composite action from an external repository"
 
 runs:
-  using: composite
+  using: "composite"
   steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    - name: Step 1
+    - name: Run Shell Script
+      run: ./scripts/test-script.sh
       shell: bash
-      run: echo "Step 1"
-    - name: Step 2
-      shell: bash
-      run: echo "Step 2"
-    - name: Step 3
-      shell: bash
-      run: bash repo-workflows/scripts/test-script
