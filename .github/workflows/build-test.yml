@@ -16,7 +16,7 @@ jobs:
       
       - name: Show files
         shell: bash
-        run: ls -la
+        run: ls -la repo-workflows
 
       - name: Run composite action
         uses: uros-simeunovic/workflows/.github/core-action@main
